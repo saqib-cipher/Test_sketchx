@@ -19,8 +19,8 @@ icon_position:icon_position %d.value
 {"color":-44197,"id":"32","nextBlock":34,"opCode":"BackgroundColor","parameters":["button4","0xFF795548"],"spec":"%m.view  BackgroundColor %m.color ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 {"color":-12358188,"id":"34","nextBlock":48,"opCode":"setTextColor","parameters":["button4","0xFF2196F3"],"spec":"%m.textview setTextColor %m.color","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 {"color":-44197,"id":"48","nextBlock":35,"opCode":"Shadow Color","parameters":["button4","0xFF009688"],"spec":"%m.view ShadowColor%m.color ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-44197,"id":"35","nextBlock":37,"opCode":"Ripple ","parameters":["button4","@36"],"spec":"%m.view RippleEnabled? %b ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"36","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-44197,"id":"35","nextBlock":37,"opCode":"Ripple ","parameters":["button4","@54"],"spec":"%m.view RippleEnabled? %b ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"54","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
 {"color":-44197,"id":"37","nextBlock":53,"opCode":"Radius_Dp","parameters":["button4","24"],"spec":"%m.view  Radius%d Dp","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 {"color":-44197,"id":"53","nextBlock":39,"opCode":"Shadow height","parameters":["button4","12"],"spec":"%m.view ShadowHeight%d Dp","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 {"color":-11262548,"id":"39","nextBlock":-1,"opCode":"IconsSetup","parameters":["button4","icon_cruelty_free_round"],"spec":"%m.view IconSetup %m.resource ","subStack1":42,"subStack2":-1,"type":"c","typeName":""}
