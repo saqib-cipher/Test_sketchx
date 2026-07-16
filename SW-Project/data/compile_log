@@ -1,0 +1,63 @@
+----------
+1. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/MainActivity.java (at line 80)
+	onBackPressed();
+	^^^^^^^^^^^^^^^
+The method onBackPressed() from the type ComponentActivity is deprecated
+----------
+2. ERROR in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/MainActivity.java (at line 111)
+	btn.setIcon(R.drawable.iconw);
+	                       ^^^^^
+iconw cannot be resolved or is not a field
+----------
+3. ERROR in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/MainActivity.java (at line 124)
+	btn2.setIcon(R.drawable.icon_open);
+	                        ^^^^^^^^^
+icon_open cannot be resolved or is not a field
+----------
+4. ERROR in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/MainActivity.java (at line 138)
+	v_button4.setIcon(R.drawable.icon_cruelty_free_round)
+	                             ^^^^^^^^^^^^^^^^^^^^^^^
+icon_cruelty_free_round cannot be resolved or is not a field
+----------
+----------
+5. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 22)
+	View _view = _toast.getView();
+	                    ^^^^^^^^^
+The method getView() from the type Toast is deprecated
+----------
+6. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 53)
+	View _view = _toast.getView();
+	                    ^^^^^^^^^
+The method getView() from the type Toast is deprecated
+----------
+7. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 126)
+	NetworkInfo _activeNetworkInfo = _connectivityManager.getActiveNetworkInfo();
+	^^^^^^^^^^^
+The type NetworkInfo is deprecated
+----------
+8. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 126)
+	NetworkInfo _activeNetworkInfo = _connectivityManager.getActiveNetworkInfo();
+	                                                      ^^^^^^^^^^^^^^^^^^^^^^
+The method getActiveNetworkInfo() from the type ConnectivityManager is deprecated
+----------
+9. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 127)
+	return _activeNetworkInfo != null && _activeNetworkInfo.isConnected();
+	                                                        ^^^^^^^^^^^^^
+The method isConnected() from the type NetworkInfo is deprecated
+----------
+10. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 148)
+	_inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+	                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The method toggleSoftInput(int, int) from the type InputMethodManager is deprecated
+----------
+11. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 153)
+	_inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+	                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The method toggleSoftInput(int, int) from the type InputMethodManager is deprecated
+----------
+12. WARNING in /storage/emulated/0/.sketchware/mysc/636/app/src/main/java/com/my/Mbutton/SketchwareUtil.java (at line 153)
+	_inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+	                                                       ^^^^^^^^^^^
+The field InputMethodManager.SHOW_FORCED is deprecated
+----------
+12 problems (3 errors, 9 warnings)
