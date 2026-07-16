@@ -1,9 +1,0 @@
-{
-  "min_sdk": "24",
-  "enable_bridgeless_themes": "false",
-  "enable_viewbinding": "false",
-  "app_class": ".SketchApplication",
-  "target_sdk": "34",
-  "disable_old_methods": "true",
-  "xml_command": "true"
-}
