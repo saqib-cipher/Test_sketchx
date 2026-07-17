@@ -1,0 +1,17 @@
+{
+  "custom_icon": false,
+  "sc_ver_code": "1",
+  "my_ws_name": "ModerFButton",
+  "color_accent": -1.045538E7,
+  "my_app_name": "ModernFButton",
+  "sc_ver_name": "1.0",
+  "sc_id": "647",
+  "color_primary": -1.045538E7,
+  "color_control_highlight": -2497793.0,
+  "color_control_normal": -1.045538E7,
+  "my_sc_reg_dt": "20260708181838",
+  "sketchware_ver": 150,
+  "isIconAdaptive": false,
+  "my_sc_pkg_name": "com.my.Mbutton",
+  "color_primary_dark": -1.045538E7
+}
