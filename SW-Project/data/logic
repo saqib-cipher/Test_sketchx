@@ -1,79 +1,21 @@
+@MainActivity.java_var
+2:s
+0:ja
+
+@MainActivity.java_list
+1:h
+3:n
+
 @MainActivity.java_func
-isServiceRunning[boolean]:isServiceRunning[boolean]
-startService:startService
-
-@TaskActivity.java_func
-initActivity:initActivity
-updateNotification:updateNotification %s.text
-
-@MainActivity.java_components
-{"componentId":"intent","param1":"","param2":"","param3":"","type":1}
-
-@TaskActivity.java_components
-{"componentId":"timer","param1":"","param2":"","param3":"","type":5}
-{"componentId":"calendar","param1":"","param2":"","param3":"","type":3}
-{"componentId":"location","param1":"","param2":"","param3":"","type":21}
-
-@MainActivity.java_events
-{"eventName":"onResume","eventType":3,"targetId":"onResume","targetType":0}
-{"eventName":"Import","eventType":3,"targetId":"Import","targetType":0}
-{"eventName":"onClick","eventType":1,"targetId":"button","targetType":41}
-
-@TaskActivity.java_events
-{"eventName":"Import","eventType":3,"targetId":"Import","targetType":0}
-{"eventName":"onLocationChanged","eventType":2,"targetId":"location","targetType":21}
+geuw[boolean]:geuw[boolean] %m.listInt.ueeu eueu
 
 @MainActivity.java_onCreate_initializeLogic
-{"color":-12358188,"id":"10","nextBlock":-1,"opCode":"setImage","parameters":["imageview1","icon_30fps_round"],"spec":"%m.imageview setImage %m.resource","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12358188,"id":"10","nextBlock":14,"opCode":"viewOnClick","parameters":["bottomnavigation1"],"spec":"When %m.view clicked","subStack1":11,"subStack2":-1,"type":"c","typeName":""}
+{"color":-12358188,"id":"11","nextBlock":-1,"opCode":"setVisible","parameters":["bottomnavigation1","GONE"],"spec":"%m.view setVisible %m.visible","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-876233,"id":"14","nextBlock":-1,"opCode":"whileLoop","parameters":["@13"],"spec":"while %b","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+{"color":-1829227,"id":"13","nextBlock":-1,"opCode":"Is empty","parameters":["shsh"],"spec":"%s is empty","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
 
-@MainActivity.java_isServiceRunning[boolean]_moreBlock
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["ActivityManager manager \u003d (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);\nif (manager !\u003d null) {\n\tfor (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {\n\t\tif (MyForegroundService.class.getName().equals(service.service.getClassName())) {\n\t\t\treturn true;\n\t\t}\n\t}\n}\nreturn false;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@MainActivity.java_Import_Import
-{"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["import androidx.core.content.ContextCompat;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@MainActivity.java_onResume_onResume
-{"color":-1988310,"id":"10","nextBlock":-1,"opCode":"ifElse","parameters":["@11"],"spec":"if %b then","subStack1":12,"subStack2":13,"type":"e","typeName":""}
-{"color":-7711273,"id":"11","nextBlock":-1,"opCode":"definedFunc","parameters":[],"spec":"isServiceRunning","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-11899692,"id":"12","nextBlock":16,"opCode":"setText","parameters":["info","Task is running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11899692,"id":"16","nextBlock":-1,"opCode":"setEnable","parameters":["button","@18"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-10701022,"id":"18","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-11899692,"id":"13","nextBlock":14,"opCode":"setText","parameters":["info","Task is not running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11899692,"id":"14","nextBlock":-1,"opCode":"setEnable","parameters":["button","@15"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-10701022,"id":"15","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-
-@MainActivity.java_startService_moreBlock
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["Intent intent \u003d new Intent(this, MyForegroundService.class);\n\nif (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.O) {\n\tContextCompat.startForegroundService(this, intent);\n} else {\n\tstartService(intent);\n}"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@MainActivity.java_button_onClick
-{"color":-876233,"id":"10","nextBlock":-1,"opCode":"if","parameters":["@11"],"spec":"if %b then","subStack1":13,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"not","parameters":["@12"],"spec":"not %b","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-7711273,"id":"12","nextBlock":-1,"opCode":"definedFunc","parameters":[],"spec":"isServiceRunning","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-7711273,"id":"13","nextBlock":14,"opCode":"definedFunc","parameters":[],"spec":"startService","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11230996,"id":"14","nextBlock":15,"opCode":"intentSetScreen","parameters":["intent","TaskActivity"],"spec":"%m.intent setScreen %m.activity","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11230996,"id":"15","nextBlock":16,"opCode":"startActivity","parameters":["intent"],"spec":"StartActivity %m.intent","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12358188,"id":"16","nextBlock":-1,"opCode":"setEnable","parameters":["button","@17"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"17","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-
-@TaskActivity.java_onCreate_initializeLogic
-{"color":-11230996,"id":"20","nextBlock":19,"opCode":"locationManagerRequestLocationUpdates","parameters":["location","GPS_PROVIDER","1000","1"],"spec":"%m.locationmanager request location updates type %m.providerType min time %d min distance %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11230996,"id":"19","nextBlock":-1,"opCode":"finishActivity","parameters":[],"spec":"Finish Activity","subStack1":-1,"subStack2":-1,"type":"f","typeName":""}
-
-@TaskActivity.java_updateNotification_moreBlock
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["\tNotificationManager notificationManager \u003d (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);\n\tString channelId \u003d \"channel\";\n\t\n\tNotification notification \u003d new NotificationCompat.Builder(this, channelId)\n\t.setContentTitle(\"Service Running\")\n\t.setContentText(_text)\n\t.setSmallIcon(R.drawable.ic_notification)\n\t.setPriority(NotificationCompat.PRIORITY_LOW)\n\t.setOngoing(true)\n\t.build();\n\t\n\tnotificationManager.notify(1, notification);"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@TaskActivity.java_Import_Import
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["import androidx.core.app.NotificationCompat;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@TaskActivity.java_location_onLocationChanged
-{"color":-7711273,"id":"10","nextBlock":-1,"opCode":"definedFunc","parameters":["@11"],"spec":"updateNotification %s.text","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-10701022,"id":"11","nextBlock":-1,"opCode":"stringJoin","parameters":["@13","@12"],"spec":"join %s and %s","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-10701022,"id":"13","nextBlock":-1,"opCode":"toStringWithDecimal","parameters":["@14"],"spec":"toString %d with decimal","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-7711273,"id":"14","nextBlock":-1,"opCode":"getArg","parameters":[],"spec":"lat","subStack1":-1,"subStack2":-1,"type":"d","typeName":""}
-{"color":-10701022,"id":"12","nextBlock":-1,"opCode":"stringJoin","parameters":[" - ","@15"],"spec":"join %s and %s","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-10701022,"id":"15","nextBlock":-1,"opCode":"toStringWithDecimal","parameters":["@16"],"spec":"toString %d with decimal","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-7711273,"id":"16","nextBlock":-1,"opCode":"getArg","parameters":[],"spec":"lat","subStack1":-1,"subStack2":-1,"type":"d","typeName":""}
-
-@TaskActivity.java_initActivity_moreBlock
-{"color":-12435108,"id":"11","nextBlock":-1,"opCode":"CommandBlockJava","parameters":["setContentView(binding.getRoot());","","","","find-replace"],"spec":"Java Command Block: reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+@MainActivity.java_geuw[boolean]_moreBlock
+{"color":-876233,"id":"10","nextBlock":12,"opCode":"switchStr","parameters":[""],"spec":"switch %s","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+{"color":-12358188,"id":"12","nextBlock":-1,"opCode":"viewOnClick","parameters":[""],"spec":"When %m.view clicked","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
 
