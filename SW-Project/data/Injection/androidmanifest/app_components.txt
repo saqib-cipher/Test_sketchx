@@ -1,4 +1,0 @@
-<service
-    android:name=".MyForegroundService"
-    android:foregroundServiceType="dataSync"
-    android:exported="false" />
