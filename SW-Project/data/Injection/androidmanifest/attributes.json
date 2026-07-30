@@ -1,0 +1,22 @@
+[
+  {
+    "name": "_application_attrs",
+    "value": "android:theme\u003d\"@style/AppTheme\""
+  },
+  {
+    "name": "TaskActivity",
+    "value": "android:hardwareAccelerated\u003d\"true\""
+  },
+  {
+    "name": "TaskActivity",
+    "value": "android:theme\u003d\"@style/TransparentTheme\""
+  },
+  {
+    "name": "TaskActivity",
+    "value": "android:noHistory\u003d\"true\""
+  },
+  {
+    "name": "TaskActivity",
+    "value": "android:finishOnTaskLaunch\u003d\"true\""
+  }
+]
