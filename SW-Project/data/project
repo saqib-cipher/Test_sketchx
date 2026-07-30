@@ -1,17 +1,17 @@
 {
-  "custom_icon": true,
+  "custom_icon": false,
   "sc_ver_code": "1",
-  "my_ws_name": "Background",
-  "color_accent": -1.6777216E7,
-  "my_app_name": "Background Activity",
+  "my_ws_name": "NewProject8",
+  "color_accent": -1.045538E7,
+  "my_app_name": "Android",
   "sc_ver_name": "1.0",
-  "sc_id": "663",
-  "color_primary": -1.6777216E7,
-  "color_control_highlight": -1118482.0,
-  "color_control_normal": -1.2434878E7,
-  "my_sc_reg_dt": "20250514042000",
+  "sc_id": "648",
+  "color_primary": -1.045538E7,
+  "color_control_highlight": -2497793.0,
+  "color_control_normal": -1.045538E7,
+  "my_sc_reg_dt": "20260719124340",
   "sketchware_ver": 150,
   "isIconAdaptive": false,
-  "my_sc_pkg_name": "com.bobur.background",
-  "color_primary_dark": -1.6777216E7
+  "my_sc_pkg_name": "com.my.newproject8",
+  "color_primary_dark": -1.045538E7
 }
