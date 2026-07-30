@@ -23,6 +23,9 @@ updateNotification:updateNotification %s.text
 {"eventName":"Import","eventType":3,"targetId":"Import","targetType":0}
 {"eventName":"onLocationChanged","eventType":2,"targetId":"location","targetType":21}
 
+@MainActivity.java_onCreate_initializeLogic
+{"color":-12358188,"id":"10","nextBlock":-1,"opCode":"setVisible","parameters":["edittext1","GONE"],"spec":"%m.view setVisible %m.visible","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
 @MainActivity.java_isServiceRunning[boolean]_moreBlock
 {"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["ActivityManager manager \u003d (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);\nif (manager !\u003d null) {\n\tfor (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {\n\t\tif (MyForegroundService.class.getName().equals(service.service.getClassName())) {\n\t\t\treturn true;\n\t\t}\n\t}\n}\nreturn false;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 
@@ -30,14 +33,14 @@ updateNotification:updateNotification %s.text
 {"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["import androidx.core.content.ContextCompat;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 
 @MainActivity.java_onResume_onResume
-{"color":-1988310,"id":"10","nextBlock":-1,"opCode":"ifElse","parameters":["@11"],"spec":"if %b then","subStack1":12,"subStack2":13,"type":"e","typeName":""}
+{"color":-876233,"id":"10","nextBlock":-1,"opCode":"ifElse","parameters":["@11"],"spec":"if %b then","subStack1":12,"subStack2":13,"type":"e","typeName":""}
 {"color":-7711273,"id":"11","nextBlock":-1,"opCode":"definedFunc","parameters":[],"spec":"isServiceRunning","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-11899692,"id":"12","nextBlock":16,"opCode":"setText","parameters":["info","Task is running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11899692,"id":"16","nextBlock":-1,"opCode":"setEnable","parameters":["button","@18"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-10701022,"id":"18","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-11899692,"id":"13","nextBlock":14,"opCode":"setText","parameters":["info","Task is not running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11899692,"id":"14","nextBlock":-1,"opCode":"setEnable","parameters":["button","@15"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-10701022,"id":"15","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-12358188,"id":"12","nextBlock":16,"opCode":"setText","parameters":["info","Task is running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12358188,"id":"16","nextBlock":-1,"opCode":"setEnable","parameters":["button","@18"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"18","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-12358188,"id":"13","nextBlock":14,"opCode":"setText","parameters":["info","Task is not running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12358188,"id":"14","nextBlock":-1,"opCode":"setEnable","parameters":["button","@15"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"15","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
 
 @MainActivity.java_startService_moreBlock
 {"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["Intent intent \u003d new Intent(this, MyForegroundService.class);\n\nif (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.O) {\n\tContextCompat.startForegroundService(this, intent);\n} else {\n\tstartService(intent);\n}"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
