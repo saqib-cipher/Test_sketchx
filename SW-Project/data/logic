@@ -24,7 +24,7 @@ updateNotification:updateNotification %s.text
 {"eventName":"onLocationChanged","eventType":2,"targetId":"location","targetType":21}
 
 @MainActivity.java_onCreate_initializeLogic
-{"color":-12358188,"id":"10","nextBlock":-1,"opCode":"setVisible","parameters":["edittext1","GONE"],"spec":"%m.view setVisible %m.visible","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12358188,"id":"10","nextBlock":-1,"opCode":"setVisible","parameters":["","GONE"],"spec":"%m.view setVisible %m.visible","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 
 @MainActivity.java_isServiceRunning[boolean]_moreBlock
 {"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["ActivityManager manager \u003d (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);\nif (manager !\u003d null) {\n\tfor (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {\n\t\tif (MyForegroundService.class.getName().equals(service.service.getClassName())) {\n\t\t\treturn true;\n\t\t}\n\t}\n}\nreturn false;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
