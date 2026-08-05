@@ -1,5 +1,8 @@
 @images
 {"resFullName":"ic_notification.png","resName":"ic_notification","resType":1}
 {"resFullName":"screen.png","resName":"screen","resType":1}
+{"resFullName":"align_box_left_bottom.png","resName":"align_box_left_bottom","resType":1}
+{"resFullName":"align_box_center_middle.png","resName":"align_box_center_middle","resType":1}
+{"resFullName":"align_box_left_top.png","resName":"align_box_left_top","resType":1}
 @sounds
 @fonts
