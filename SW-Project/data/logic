@@ -1,79 +1,88 @@
-@MainActivity.java_func
-isServiceRunning[boolean]:isServiceRunning[boolean]
-startService:startService
+@ServiceActivity.java_var
+3:map
+0:isWorking
 
-@TaskActivity.java_func
-initActivity:initActivity
-updateNotification:updateNotification %s.text
+@MainActivity.java_var
+2:s
 
-@MainActivity.java_components
-{"componentId":"intent","param1":"","param2":"","param3":"","type":1}
+@ServiceActivity.java_list
+3:list
 
-@TaskActivity.java_components
+@ServiceActivity.java_func
+extra:extra
+createChannel:createChannel
+notification:notification
+cancelNotification:cancelNotification
+
+@ServiceActivity.java_components
+{"componentId":"db","param1":"db","param2":"","param3":"","type":6}
 {"componentId":"timer","param1":"","param2":"","param3":"","type":5}
-{"componentId":"calendar","param1":"","param2":"","param3":"","type":3}
-{"componentId":"location","param1":"","param2":"","param3":"","type":21}
+{"componentId":"mp","param1":"","param2":"","param3":"","type":8}
+
+@ServiceActivity.java_events
+{"eventName":"Import","eventType":3,"targetId":"Import","targetType":0}
+{"eventName":"onDestroy","eventType":3,"targetId":"onDestroy","targetType":0}
+{"eventName":"onChildAdded","eventType":2,"targetId":"db","targetType":6}
 
 @MainActivity.java_events
-{"eventName":"onResume","eventType":3,"targetId":"onResume","targetType":0}
-{"eventName":"Import","eventType":3,"targetId":"Import","targetType":0}
-{"eventName":"onClick","eventType":1,"targetId":"button","targetType":41}
+{"eventName":"onClick","eventType":1,"targetId":"materialbutton1","targetType":41}
 
-@TaskActivity.java_events
-{"eventName":"Import","eventType":3,"targetId":"Import","targetType":0}
-{"eventName":"onLocationChanged","eventType":2,"targetId":"location","targetType":21}
+@ServiceActivity.java_onCreate_initializeLogic
+{"color":-12435108,"id":"10","nextBlock":12,"opCode":"CommandBlockJava","parameters":["extends AppCompatActivity {\r","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":11,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["extends Service {\r"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12435108,"id":"12","nextBlock":13,"opCode":"CommandBlockJava","parameters":["setContentView(R.layout.service);","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+{"color":-12435108,"id":"13","nextBlock":14,"opCode":"CommandBlockJava","parameters":["initialize(_savedInstanceState);","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+{"color":-12435108,"id":"14","nextBlock":15,"opCode":"CommandBlockJava","parameters":["super.onCreate(_savedInstanceState);","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+{"color":-12435108,"id":"15","nextBlock":20,"opCode":"CommandBlockJava","parameters":["protected void onCreate(Bundle _savedInstanceState) {","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":16,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16729254,"id":"16","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["public int onStartCommand(Intent intent, int flags, int startId) { "],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12435108,"id":"20","nextBlock":29,"opCode":"CommandBlockJava","parameters":["\t@Override\r\n\tprotected void onActivityResult(int _requestCode, int _resultCode, Intent _data) {\r\n\t\t\r\n\t\tsuper.onActivityResult(_requestCode, _resultCode, _data);\r\n\t\t\r\n\t\tswitch (_requestCode) {\r\n\t\t\t\r\n\t\t\tdefault:\r\n\t\t\tbreak;\r\n\t\t}\r\n\t}","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+{"color":-12435108,"id":"29","nextBlock":32,"opCode":"CommandBlockJava","parameters":["runOnUiThread","5","5","5","find-replace-all"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":30,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16729254,"id":"30","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["new Handler(Looper.getMainLooper()).post"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12435108,"id":"32","nextBlock":38,"opCode":"CommandBlockJava","parameters":["initializeLogic();\r","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":43,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16729254,"id":"43","nextBlock":33,"opCode":"addSourceDirectly","parameters":["initialize();"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"33","nextBlock":35,"opCode":"addSourceDirectly","parameters":["initializeLogic();"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-7711273,"id":"35","nextBlock":34,"opCode":"definedFunc","parameters":[],"spec":"notification","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"34","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["return START_NOT_STICKY;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12435108,"id":"38","nextBlock":41,"opCode":"CommandBlockJava","parameters":["private boolean isWorking","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":39,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16729254,"id":"39","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["public static boolean isWorking"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12435108,"id":"41","nextBlock":36,"opCode":"CommandBlockJava","parameters":["private void initialize(Bundle _savedInstanceState) {","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":42,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16729254,"id":"42","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["private void initialize() {"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-559806,"id":"36","nextBlock":28,"opCode":"setVarBoolean","parameters":["isWorking","@37"],"spec":"set %m.varBool to %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"37","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-11230996,"id":"28","nextBlock":-1,"opCode":"timerEvery","parameters":["timer","2000","2000"],"spec":"%m.timer after %d ms for every %d ms","subStack1":17,"subStack2":-1,"type":"c","typeName":""}
+{"color":-559806,"id":"17","nextBlock":18,"opCode":"mapCreateNew","parameters":["map"],"spec":"%m.varMap create new map","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-559806,"id":"18","nextBlock":19,"opCode":"mapPut","parameters":["map","working","true"],"spec":"%m.varMap put key %s value %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11230996,"id":"19","nextBlock":-1,"opCode":"firebaseAdd","parameters":["db","working","map"],"spec":"%m.firebase add key %s value %m.varMap","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@ServiceActivity.java_Import_Import
+{"color":-559806,"id":"11","nextBlock":-1,"opCode":"customImport","parameters":["android.app.AlarmManager;\nimport android.app.Notification;\nimport android.app.PendingIntent;\nimport android.app.Service;\nimport android.content.ComponentName;\nimport android.content.Context;\nimport android.content.Intent;\nimport android.os.Build;\nimport android.os.IBinder;\nimport android.os.SystemClock"],"spec":"import %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@ServiceActivity.java_db_onChildAdded
+{"color":-11230996,"id":"12","nextBlock":-1,"opCode":"doToast","parameters":["Firebase Added"],"spec":"Toast %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@ServiceActivity.java_cancelNotification_moreBlock
+{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["NotificationManager notificationManager \u003d (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); notificationManager.cancel(05);\n// 0 is Notification ID"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@ServiceActivity.java_createChannel_moreBlock
+{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["if (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.O) {\nCharSequence name \u003d \"Buyurtma bildirishnomalari\";\nString description \u003d \"Buyurtma bildirishnomasi\";\nint importance \u003d NotificationManager.IMPORTANCE_MAX;\nNotificationChannel channel \u003d new NotificationChannel(\"id 1\", name, importance);\nchannel.setDescription(description);\n\nNotificationManager notificationManager \u003d getSystemService(NotificationManager.class);\nnotificationManager.createNotificationChannel(channel);\n\n}"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@ServiceActivity.java_onDestroy_onDestroy
+{"color":-7711273,"id":"11","nextBlock":10,"opCode":"definedFunc","parameters":[],"spec":"cancelNotification","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["Intent intent2 \u003d new Intent(getApplicationContext(), getClass());\n        intent2.setPackage(getPackageName());\n        ((AlarmManager) getApplicationContext().getSystemService(\"alarm\")).set(3, 1000 + SystemClock.elapsedRealtime(), PendingIntent.getService(getApplicationContext(), 1, intent2, 1073741824));"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@ServiceActivity.java_extra_moreBlock
+{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["}\n\n@Override\npublic IBinder onBind(Intent intent) {\n\nreturn null;\n}\n{\r\n}\npublic void onTaskRemoved(Intent intent) {\n        \rIntent intent2 \u003d new Intent(getApplicationContext(), getClass());\n        intent2.setPackage(getPackageName());\n        ((AlarmManager) getApplicationContext().getSystemService(\"alarm\")).set(3, 1000 + SystemClock.elapsedRealtime(), PendingIntent.getService(getApplicationContext(), 1, intent2, 1073741824));\r\nsuper.onTaskRemoved(intent);\n    \n}\n\n{"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@ServiceActivity.java_notification_moreBlock
+{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["int notifyId \u003d 0;\n\t\t        androidx.core.app.NotificationCompat.Builder mBuilder \u003d new androidx.core.app.NotificationCompat.Builder(this,\"0\");\n\t\t          \r\n\t\tNotificationManager notificationManager \u003d (NotificationManager) getSystemService(NOTIFICATION_SERVICE); \n\t\t\n\t\t        if (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.O) { \n\t\t\t            String channelId2 \u003d \"id\"; \n\t\t\t            String channelName2 \u003d \"Notification\"; \n\t\t\t \n\t\t\t            NotificationChannel channel \u003d new NotificationChannel(channelId2, channelName2, NotificationManager.IMPORTANCE_HIGH); \n\t\t\t \n\t\t\t            mBuilder.setChannelId(channelId2); \n\t\t\t mBuilder.setVisibility(Notification.VISIBILITY_SECRET);\nmBuilder.setOngoing(true);\nmBuilder.setAutoCancel(true);\n\t\t\t            if (notificationManager !\u003d null) { \n\t\t\t\t                notificationManager.createNotificationChannel(channel); \n\t\t\t\t            } \n\t\t\t        } else { \n\t\t\t         \n\t\t\t        } \n\t\t \r\nstartForeground(05, mBuilder.build());\r\n"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 
 @MainActivity.java_onCreate_initializeLogic
-{"color":-12358188,"id":"10","nextBlock":-1,"opCode":"setVisible","parameters":["","GONE"],"spec":"%m.view setVisible %m.visible","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11230996,"id":"38","nextBlock":36,"opCode":"LightStatusBar","parameters":[],"spec":"LightStatusBar","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-12435108,"id":"36","nextBlock":-1,"opCode":"CommandBlockXML","parameters":["\u003citem name\u003d\"colorControlNormal\"\u003e@color/colorControlNormal\u003c/item\u003e","","","","add","styles.xml"],"spec":"XML Command Block: reference %s distance %d frontend %d backend %d command %m.Command xml name %s.inputOnly","subStack1":37,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16729254,"id":"37","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["\t\t\u003citem name\u003d\"android:fontFamily\"\u003e@drawable/font\u003c/item\u003e"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 
-@MainActivity.java_isServiceRunning[boolean]_moreBlock
-{"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["ActivityManager manager \u003d (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);\nif (manager !\u003d null) {\n\tfor (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {\n\t\tif (MyForegroundService.class.getName().equals(service.service.getClassName())) {\n\t\t\treturn true;\n\t\t}\n\t}\n}\nreturn false;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@MainActivity.java_Import_Import
-{"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["import androidx.core.content.ContextCompat;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@MainActivity.java_onResume_onResume
-{"color":-876233,"id":"10","nextBlock":-1,"opCode":"ifElse","parameters":["@11"],"spec":"if %b then","subStack1":12,"subStack2":13,"type":"e","typeName":""}
-{"color":-7711273,"id":"11","nextBlock":-1,"opCode":"definedFunc","parameters":[],"spec":"isServiceRunning","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-12358188,"id":"12","nextBlock":16,"opCode":"setText","parameters":["info","Task is running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12358188,"id":"16","nextBlock":-1,"opCode":"setEnable","parameters":["button","@18"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"18","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-12358188,"id":"13","nextBlock":14,"opCode":"setText","parameters":["info","Task is not running"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12358188,"id":"14","nextBlock":-1,"opCode":"setEnable","parameters":["button","@15"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"15","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-
-@MainActivity.java_startService_moreBlock
-{"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["Intent intent \u003d new Intent(this, MyForegroundService.class);\n\nif (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.O) {\n\tContextCompat.startForegroundService(this, intent);\n} else {\n\tstartService(intent);\n}"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@MainActivity.java_button_onClick
-{"color":-1988310,"id":"10","nextBlock":-1,"opCode":"if","parameters":["@11"],"spec":"if %b then","subStack1":13,"subStack2":-1,"type":"c","typeName":""}
-{"color":-10701022,"id":"11","nextBlock":-1,"opCode":"not","parameters":["@12"],"spec":"not %b","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-7711273,"id":"12","nextBlock":-1,"opCode":"definedFunc","parameters":[],"spec":"isServiceRunning","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-7711273,"id":"13","nextBlock":14,"opCode":"definedFunc","parameters":[],"spec":"startService","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-13851166,"id":"14","nextBlock":15,"opCode":"intentSetScreen","parameters":["intent","TaskActivity"],"spec":"%m.intent setScreen %m.activity","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-13851166,"id":"15","nextBlock":16,"opCode":"startActivity","parameters":["intent"],"spec":"StartActivity %m.intent","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11899692,"id":"16","nextBlock":-1,"opCode":"setEnable","parameters":["button","@17"],"spec":"%m.view setEnable %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-10701022,"id":"17","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-
-@TaskActivity.java_onCreate_initializeLogic
-{"color":-13851166,"id":"20","nextBlock":19,"opCode":"locationManagerRequestLocationUpdates","parameters":["location","GPS_PROVIDER","1000","1"],"spec":"%m.locationmanager request location updates type %m.providerType min time %d min distance %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-13851166,"id":"19","nextBlock":-1,"opCode":"finishActivity","parameters":[],"spec":"Finish Activity","subStack1":-1,"subStack2":-1,"type":"f","typeName":""}
-
-@TaskActivity.java_updateNotification_moreBlock
-{"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["\tNotificationManager notificationManager \u003d (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);\n\tString channelId \u003d \"channel\";\n\t\n\tNotification notification \u003d new NotificationCompat.Builder(this, channelId)\n\t.setContentTitle(\"Service Running\")\n\t.setContentText(_text)\n\t.setSmallIcon(R.drawable.ic_notification)\n\t.setPriority(NotificationCompat.PRIORITY_LOW)\n\t.setOngoing(true)\n\t.build();\n\t\n\tnotificationManager.notify(1, notification);"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@TaskActivity.java_Import_Import
-{"color":-10701022,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["import androidx.core.app.NotificationCompat;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@TaskActivity.java_location_onLocationChanged
-{"color":-7711273,"id":"10","nextBlock":-1,"opCode":"definedFunc","parameters":["@11"],"spec":"updateNotification %s.text","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-10701022,"id":"11","nextBlock":-1,"opCode":"stringJoin","parameters":["@13","@12"],"spec":"join %s and %s","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-10701022,"id":"13","nextBlock":-1,"opCode":"toStringWithDecimal","parameters":["@14"],"spec":"toString %d with decimal","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-7711273,"id":"14","nextBlock":-1,"opCode":"getArg","parameters":[],"spec":"lat","subStack1":-1,"subStack2":-1,"type":"d","typeName":""}
-{"color":-10701022,"id":"12","nextBlock":-1,"opCode":"stringJoin","parameters":[" - ","@15"],"spec":"join %s and %s","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-10701022,"id":"15","nextBlock":-1,"opCode":"toStringWithDecimal","parameters":["@16"],"spec":"toString %d with decimal","subStack1":-1,"subStack2":-1,"type":"s","typeName":""}
-{"color":-7711273,"id":"16","nextBlock":-1,"opCode":"getArg","parameters":[],"spec":"lat","subStack1":-1,"subStack2":-1,"type":"d","typeName":""}
-
-@TaskActivity.java_initActivity_moreBlock
-{"color":-11976870,"id":"11","nextBlock":-1,"opCode":"CommandBlockJava","parameters":["setContentView(binding.getRoot());","","","","find-replace"],"spec":"Java Command Block: reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
+@MainActivity.java_materialbutton1_onClick
+{"color":-876233,"id":"10","nextBlock":-1,"opCode":"ifElse","parameters":["@11"],"spec":"if %b then","subStack1":-1,"subStack2":12,"type":"e","typeName":""}
+{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"asdBoolean","parameters":["ServiceActivity.isWorking"],"spec":"boolean %s.inputOnly","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-16729254,"id":"12","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["Intent intent \u003d new Intent(MainActivity.this, ServiceActivity.class);\nstartService(intent);"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 
