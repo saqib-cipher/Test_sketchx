@@ -1,4 +1,6 @@
 <service
-    android:name=".MyForegroundService"
-    android:foregroundServiceType="dataSync"
-    android:exported="false" />
+android:enabled="true"
+android:exported="true"
+android:name=".ServiceActivity"
+android:foregroundServiceType="mediaPlayback"
+/>
