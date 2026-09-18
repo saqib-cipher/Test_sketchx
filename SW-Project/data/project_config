@@ -1,1 +1,1 @@
-{"min_sdk":"21","enable_bridgeless_themes":"false","app_class":".SketchApplication","target_sdk":"28","disable_old_methods":"true"}
+{"manifest_manual_edit_enabled":"true","min_sdk":"21","enable_viewbinding":"false","app_class":".SketchApplication","dynamic_colors":"false","target_sdk":"34","disable_old_methods":"false","xml_command":"true","enable_material3_theme":"false"}
