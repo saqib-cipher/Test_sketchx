@@ -1,88 +1,115 @@
-@ServiceActivity.java_var
-3:map
-0:isWorking
-
 @MainActivity.java_var
-2:s
+0:anim
 
-@ServiceActivity.java_list
-3:list
+@MainActivity.java_func
+dotAnima:dotAnima
 
-@ServiceActivity.java_func
-extra:extra
-createChannel:createChannel
-notification:notification
-cancelNotification:cancelNotification
-
-@ServiceActivity.java_components
-{"componentId":"db","param1":"db","param2":"","param3":"","type":6}
-{"componentId":"timer","param1":"","param2":"","param3":"","type":5}
-{"componentId":"mp","param1":"","param2":"","param3":"","type":8}
-
-@ServiceActivity.java_events
-{"eventName":"Import","eventType":3,"targetId":"Import","targetType":0}
-{"eventName":"onDestroy","eventType":3,"targetId":"onDestroy","targetType":0}
-{"eventName":"onChildAdded","eventType":2,"targetId":"db","targetType":6}
+@MainActivity.java_components
+{"componentId":"i","param1":"","param2":"","param3":"","type":1}
 
 @MainActivity.java_events
-{"eventName":"onClick","eventType":1,"targetId":"materialbutton1","targetType":41}
-
-@ServiceActivity.java_onCreate_initializeLogic
-{"color":-12435108,"id":"10","nextBlock":12,"opCode":"CommandBlockJava","parameters":["extends AppCompatActivity {\r","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":11,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["extends Service {\r"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12435108,"id":"12","nextBlock":13,"opCode":"CommandBlockJava","parameters":["setContentView(R.layout.service);","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
-{"color":-12435108,"id":"13","nextBlock":14,"opCode":"CommandBlockJava","parameters":["initialize(_savedInstanceState);","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
-{"color":-12435108,"id":"14","nextBlock":15,"opCode":"CommandBlockJava","parameters":["super.onCreate(_savedInstanceState);","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
-{"color":-12435108,"id":"15","nextBlock":20,"opCode":"CommandBlockJava","parameters":["protected void onCreate(Bundle _savedInstanceState) {","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":16,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"16","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["public int onStartCommand(Intent intent, int flags, int startId) { "],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12435108,"id":"20","nextBlock":29,"opCode":"CommandBlockJava","parameters":["\t@Override\r\n\tprotected void onActivityResult(int _requestCode, int _resultCode, Intent _data) {\r\n\t\t\r\n\t\tsuper.onActivityResult(_requestCode, _resultCode, _data);\r\n\t\t\r\n\t\tswitch (_requestCode) {\r\n\t\t\t\r\n\t\t\tdefault:\r\n\t\t\tbreak;\r\n\t\t}\r\n\t}","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":-1,"subStack2":-1,"type":"c","typeName":""}
-{"color":-12435108,"id":"29","nextBlock":32,"opCode":"CommandBlockJava","parameters":["runOnUiThread","5","5","5","find-replace-all"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":30,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"30","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["new Handler(Looper.getMainLooper()).post"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12435108,"id":"32","nextBlock":38,"opCode":"CommandBlockJava","parameters":["initializeLogic();\r","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":43,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"43","nextBlock":33,"opCode":"addSourceDirectly","parameters":["initialize();"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"33","nextBlock":35,"opCode":"addSourceDirectly","parameters":["initializeLogic();"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-7711273,"id":"35","nextBlock":34,"opCode":"definedFunc","parameters":[],"spec":"notification","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"34","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["return START_NOT_STICKY;"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12435108,"id":"38","nextBlock":41,"opCode":"CommandBlockJava","parameters":["private boolean isWorking","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":39,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"39","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["public static boolean isWorking"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12435108,"id":"41","nextBlock":36,"opCode":"CommandBlockJava","parameters":["private void initialize(Bundle _savedInstanceState) {","5","5","5","find-replace"],"spec":"Java Command Block : reference %s distance %d frontend %d backend %d command %m.Command","subStack1":42,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"42","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["private void initialize() {"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-559806,"id":"36","nextBlock":28,"opCode":"setVarBoolean","parameters":["isWorking","@37"],"spec":"set %m.varBool to %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"37","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-11230996,"id":"28","nextBlock":-1,"opCode":"timerEvery","parameters":["timer","2000","2000"],"spec":"%m.timer after %d ms for every %d ms","subStack1":17,"subStack2":-1,"type":"c","typeName":""}
-{"color":-559806,"id":"17","nextBlock":18,"opCode":"mapCreateNew","parameters":["map"],"spec":"%m.varMap create new map","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-559806,"id":"18","nextBlock":19,"opCode":"mapPut","parameters":["map","working","true"],"spec":"%m.varMap put key %s value %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-11230996,"id":"19","nextBlock":-1,"opCode":"firebaseAdd","parameters":["db","working","map"],"spec":"%m.firebase add key %s value %m.varMap","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@ServiceActivity.java_Import_Import
-{"color":-559806,"id":"11","nextBlock":-1,"opCode":"customImport","parameters":["android.app.AlarmManager;\nimport android.app.Notification;\nimport android.app.PendingIntent;\nimport android.app.Service;\nimport android.content.ComponentName;\nimport android.content.Context;\nimport android.content.Intent;\nimport android.os.Build;\nimport android.os.IBinder;\nimport android.os.SystemClock"],"spec":"import %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@ServiceActivity.java_db_onChildAdded
-{"color":-11230996,"id":"12","nextBlock":-1,"opCode":"doToast","parameters":["Firebase Added"],"spec":"Toast %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@ServiceActivity.java_cancelNotification_moreBlock
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["NotificationManager notificationManager \u003d (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE); notificationManager.cancel(05);\n// 0 is Notification ID"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@ServiceActivity.java_createChannel_moreBlock
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["if (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.O) {\nCharSequence name \u003d \"Buyurtma bildirishnomalari\";\nString description \u003d \"Buyurtma bildirishnomasi\";\nint importance \u003d NotificationManager.IMPORTANCE_MAX;\nNotificationChannel channel \u003d new NotificationChannel(\"id 1\", name, importance);\nchannel.setDescription(description);\n\nNotificationManager notificationManager \u003d getSystemService(NotificationManager.class);\nnotificationManager.createNotificationChannel(channel);\n\n}"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@ServiceActivity.java_onDestroy_onDestroy
-{"color":-7711273,"id":"11","nextBlock":10,"opCode":"definedFunc","parameters":[],"spec":"cancelNotification","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["Intent intent2 \u003d new Intent(getApplicationContext(), getClass());\n        intent2.setPackage(getPackageName());\n        ((AlarmManager) getApplicationContext().getSystemService(\"alarm\")).set(3, 1000 + SystemClock.elapsedRealtime(), PendingIntent.getService(getApplicationContext(), 1, intent2, 1073741824));"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@ServiceActivity.java_extra_moreBlock
-{"color":-16729254,"id":"10","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["}\n\n@Override\npublic IBinder onBind(Intent intent) {\n\nreturn null;\n}\n{\r\n}\npublic void onTaskRemoved(Intent intent) {\n        \rIntent intent2 \u003d new Intent(getApplicationContext(), getClass());\n        intent2.setPackage(getPackageName());\n        ((AlarmManager) getApplicationContext().getSystemService(\"alarm\")).set(3, 1000 + SystemClock.elapsedRealtime(), PendingIntent.getService(getApplicationContext(), 1, intent2, 1073741824));\r\nsuper.onTaskRemoved(intent);\n    \n}\n\n{"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-
-@ServiceActivity.java_notification_moreBlock
-{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["int notifyId \u003d 0;\n\t\t        androidx.core.app.NotificationCompat.Builder mBuilder \u003d new androidx.core.app.NotificationCompat.Builder(this,\"0\");\n\t\t          \r\n\t\tNotificationManager notificationManager \u003d (NotificationManager) getSystemService(NOTIFICATION_SERVICE); \n\t\t\n\t\t        if (Build.VERSION.SDK_INT \u003e\u003d Build.VERSION_CODES.O) { \n\t\t\t            String channelId2 \u003d \"id\"; \n\t\t\t            String channelName2 \u003d \"Notification\"; \n\t\t\t \n\t\t\t            NotificationChannel channel \u003d new NotificationChannel(channelId2, channelName2, NotificationManager.IMPORTANCE_HIGH); \n\t\t\t \n\t\t\t            mBuilder.setChannelId(channelId2); \n\t\t\t mBuilder.setVisibility(Notification.VISIBILITY_SECRET);\nmBuilder.setOngoing(true);\nmBuilder.setAutoCancel(true);\n\t\t\t            if (notificationManager !\u003d null) { \n\t\t\t\t                notificationManager.createNotificationChannel(channel); \n\t\t\t\t            } \n\t\t\t        } else { \n\t\t\t         \n\t\t\t        } \n\t\t \r\nstartForeground(05, mBuilder.build());\r\n"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"eventName":"onClick","eventType":1,"targetId":"button1","targetType":3}
+{"eventName":"onClick","eventType":1,"targetId":"button2","targetType":3}
+{"eventName":"onClick","eventType":1,"targetId":"button3","targetType":3}
+{"eventName":"onClick","eventType":1,"targetId":"button4","targetType":3}
+{"eventName":"onClick","eventType":1,"targetId":"button5","targetType":3}
 
 @MainActivity.java_onCreate_initializeLogic
-{"color":-11230996,"id":"38","nextBlock":36,"opCode":"LightStatusBar","parameters":[],"spec":"LightStatusBar","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
-{"color":-12435108,"id":"36","nextBlock":-1,"opCode":"CommandBlockXML","parameters":["\u003citem name\u003d\"colorControlNormal\"\u003e@color/colorControlNormal\u003c/item\u003e","","","","add","styles.xml"],"spec":"XML Command Block: reference %s distance %d frontend %d backend %d command %m.Command xml name %s.inputOnly","subStack1":37,"subStack2":-1,"type":"c","typeName":""}
-{"color":-16729254,"id":"37","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["\t\t\u003citem name\u003d\"android:fontFamily\"\u003e@drawable/font\u003c/item\u003e"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-2389760,"id":"10","nextBlock":-1,"opCode":"setVarBoolean","parameters":["anim","@11"],"spec":"set %m.varBool to %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
 
-@MainActivity.java_materialbutton1_onClick
-{"color":-876233,"id":"10","nextBlock":-1,"opCode":"ifElse","parameters":["@11"],"spec":"if %b then","subStack1":-1,"subStack2":12,"type":"e","typeName":""}
-{"color":-16729254,"id":"11","nextBlock":-1,"opCode":"asdBoolean","parameters":["ServiceActivity.isWorking"],"spec":"boolean %s.inputOnly","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
-{"color":-16729254,"id":"12","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["Intent intent \u003d new Intent(MainActivity.this, ServiceActivity.class);\nstartService(intent);"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+@MainActivity.java_button2_onClick
+{"color":-7711273,"id":"10","nextBlock":-1,"opCode":"definedFunc","parameters":[],"spec":"dotAnima","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@MainActivity.java_dotAnima_moreBlock
+{"color":-11910207,"id":"10","nextBlock":-1,"opCode":"Setup view","parameters":["@11"],"spec":"Set-up views %m.view ","subStack1":23,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"11","nextBlock":-1,"opCode":"Views","parameters":["linear3","@12"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"12","nextBlock":-1,"opCode":"Views","parameters":["linear4","linear5"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-16354097,"id":"23","nextBlock":25,"opCode":"setAlpha","parameters":["@24","0"],"spec":"%m.view setAlpha %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"24","nextBlock":-1,"opCode":"GroupView","parameters":[],"spec":"GroupView","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-16354097,"id":"25","nextBlock":26,"opCode":"setScaleX","parameters":["@28","0.5"],"spec":"%m.view setScaleX %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"28","nextBlock":-1,"opCode":"GroupView","parameters":[],"spec":"GroupView","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-16354097,"id":"26","nextBlock":14,"opCode":"setScaleY","parameters":["@27","0.5"],"spec":"%m.view setScaleY %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"27","nextBlock":-1,"opCode":"GroupView","parameters":[],"spec":"GroupView","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"14","nextBlock":-1,"opCode":"Make Animation","parameters":["@15"],"spec":"%m.view Animate","subStack1":29,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"15","nextBlock":-1,"opCode":"GroupView","parameters":[],"spec":"GroupView","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-8396582,"id":"29","nextBlock":30,"opCode":"ViewPropertyAnimator_scaleY","parameters":["1"],"spec":"scale Y to %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-8396582,"id":"30","nextBlock":16,"opCode":"ViewPropertyAnimator_scaleX","parameters":["1"],"spec":"scale X to %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"16","nextBlock":33,"opCode":"alpha","parameters":["1"],"spec":"Fade (Alpha) 0,1 %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"33","nextBlock":19,"opCode":"Delay","parameters":["150"],"spec":"Delay (each view) %d ms","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"19","nextBlock":34,"opCode":"setInterpolator","parameters":["@20","4"],"spec":"setAnim Type %m.TimeInterpolator %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16743462,"id":"20","nextBlock":-1,"opCode":"ViewPropertyAnimator_OvershootInterpolat","parameters":[],"spec":"Overshoot Interpolator","subStack1":-1,"subStack2":-1,"type":"v","typeName":"TimeInterpolator"}
+{"color":-8396582,"id":"34","nextBlock":21,"opCode":"ViewPropertyAnimator_setDuration","parameters":["1000"],"spec":"set Duration %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"21","nextBlock":-1,"opCode":"With End animation","parameters":[],"spec":"When Anim End (no required custom variable)","subStack1":35,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"35","nextBlock":-1,"opCode":"Setup view","parameters":["@36"],"spec":"Set-up views %m.view ","subStack1":44,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"36","nextBlock":-1,"opCode":"Views","parameters":["linear3","@37"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"37","nextBlock":-1,"opCode":"Views","parameters":["linear4","linear5"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"44","nextBlock":-1,"opCode":"Make Animation","parameters":["@45"],"spec":"%m.view Animate","subStack1":46,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"45","nextBlock":-1,"opCode":"GroupView","parameters":[],"spec":"GroupView","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-8396582,"id":"46","nextBlock":47,"opCode":"ViewPropertyAnimator_scaleY","parameters":["0.5"],"spec":"scale Y to %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-8396582,"id":"47","nextBlock":48,"opCode":"ViewPropertyAnimator_scaleX","parameters":["0.5"],"spec":"scale X to %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"48","nextBlock":49,"opCode":"alpha","parameters":["0"],"spec":"Fade (Alpha) 0,1 %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"49","nextBlock":50,"opCode":"Delay","parameters":["150"],"spec":"Delay (each view) %d ms","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"50","nextBlock":52,"opCode":"setInterpolator","parameters":["@51","4"],"spec":"setAnim Type %m.TimeInterpolator %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16743462,"id":"51","nextBlock":-1,"opCode":"ViewPropertyAnimator_OvershootInterpolat","parameters":[],"spec":"Overshoot Interpolator","subStack1":-1,"subStack2":-1,"type":"v","typeName":"TimeInterpolator"}
+{"color":-8396582,"id":"52","nextBlock":53,"opCode":"ViewPropertyAnimator_setDuration","parameters":["1000"],"spec":"set Duration %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"53","nextBlock":-1,"opCode":"With End animation","parameters":[],"spec":"When Anim End (no required custom variable)","subStack1":54,"subStack2":-1,"type":"c","typeName":""}
+{"color":-7711273,"id":"54","nextBlock":-1,"opCode":"definedFunc","parameters":[],"spec":"dotAnima","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@MainActivity.java_button3_onClick
+{"color":-13851166,"id":"10","nextBlock":11,"opCode":"intentSetData","parameters":["i","https://t.me/Grafix_lab"],"spec":"%m.intent setData %s.intentData","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-13851166,"id":"11","nextBlock":12,"opCode":"intentSetAction","parameters":["i","ACTION_VIEW"],"spec":"%m.intent setAction %m.intentAction","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-13851166,"id":"12","nextBlock":-1,"opCode":"startActivity","parameters":["i"],"spec":"StartActivity %m.intent","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@MainActivity.java_button5_onClick
+{"color":-10701022,"id":"20","nextBlock":21,"opCode":"addSourceDirectly","parameters":["//U r converting views into group 👇Switches id\u0027s (add comma after each new view)"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-10701022,"id":"21","nextBlock":22,"opCode":"addSourceDirectly","parameters":["Switch[] viees \u003d {switch1, switch2, switch3}; \n\n\nfor (int i \u003d 0; i \u003c viees.length; i++) {\n    final Switch cutView \u003d viees[i]; // Ensure it\u0027s a CheckBox\nif (cutView.isChecked()) {\r\n\tcutView.setChecked(false);\n} else {\r\n\tcutView.setChecked(true);\n}\n}"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-10701022,"id":"22","nextBlock":-1,"opCode":"addSourceDirectly","parameters":["//if you want custom block block then contact me Telegram/Grafix_Lab"],"spec":"add source directly %s.inputOnly","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@MainActivity.java_button1_onClick
+{"color":-3362514,"id":"64","nextBlock":-1,"opCode":"ifElse","parameters":["@65"],"spec":"if %b then","subStack1":66,"subStack2":68,"type":"e","typeName":""}
+{"color":-2389760,"id":"65","nextBlock":-1,"opCode":"getVar","parameters":[],"spec":"anim","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-2389760,"id":"66","nextBlock":71,"opCode":"setVarBoolean","parameters":["anim","@67"],"spec":"set %m.varBool to %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"67","nextBlock":-1,"opCode":"false","parameters":[],"spec":"false","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-11910207,"id":"71","nextBlock":-1,"opCode":"Setup view","parameters":["@72"],"spec":"Set-up views %m.view ","subStack1":109,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"72","nextBlock":-1,"opCode":"Views","parameters":["button2","@73"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"73","nextBlock":-1,"opCode":"Views","parameters":["button3","@74"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"74","nextBlock":-1,"opCode":"Views","parameters":["button5","button4"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"109","nextBlock":-1,"opCode":"Make Animation","parameters":["@110"],"spec":"%m.view Animate","subStack1":76,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"110","nextBlock":-1,"opCode":"GroupView","parameters":[],"spec":"GroupView","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"76","nextBlock":77,"opCode":"alpha","parameters":["1"],"spec":"Fade (Alpha) 0,1 %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"77","nextBlock":82,"opCode":"TranslateY","parameters":["0"],"spec":"TranslateY%d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"82","nextBlock":96,"opCode":"Delay","parameters":["150"],"spec":"Delay (multi) %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"96","nextBlock":83,"opCode":"setInterpolator","parameters":["@107","2"],"spec":"setAnim Type %m.TimeInterpolator %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16743462,"id":"107","nextBlock":-1,"opCode":"ViewPropertyAnimator_OvershootInterpolat","parameters":[],"spec":"Overshoot Interpolator","subStack1":-1,"subStack2":-1,"type":"v","typeName":"TimeInterpolator"}
+{"color":-11910207,"id":"83","nextBlock":-1,"opCode":"With End animation","parameters":[],"spec":"When Anim End (no required custom variable)","subStack1":84,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16354097,"id":"84","nextBlock":-1,"opCode":"setText","parameters":["textview1","Animation Start"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-2389760,"id":"68","nextBlock":60,"opCode":"setVarBoolean","parameters":["anim","@69"],"spec":"set %m.varBool to %b","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16729254,"id":"69","nextBlock":-1,"opCode":"true","parameters":[],"spec":"true","subStack1":-1,"subStack2":-1,"type":"b","typeName":""}
+{"color":-11910207,"id":"60","nextBlock":-1,"opCode":"Setup view","parameters":["@38"],"spec":"Set-up views %m.view ","subStack1":108,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"38","nextBlock":-1,"opCode":"Views","parameters":["button2","@39"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"39","nextBlock":-1,"opCode":"Views","parameters":["button3","@59"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"59","nextBlock":-1,"opCode":"Views","parameters":["button5","button4"],"spec":"%m.view and %m.view ","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"108","nextBlock":-1,"opCode":"Make Animation","parameters":["@111"],"spec":"%m.view Animate","subStack1":62,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11910207,"id":"111","nextBlock":-1,"opCode":"GroupView","parameters":[],"spec":"GroupView","subStack1":-1,"subStack2":-1,"type":"v","typeName":"View"}
+{"color":-11910207,"id":"62","nextBlock":63,"opCode":"alpha","parameters":["0"],"spec":"Fade (Alpha) 0,1 %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"63","nextBlock":85,"opCode":"TranslateY","parameters":["20"],"spec":"TranslateY%d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"85","nextBlock":103,"opCode":"Delay","parameters":["150"],"spec":"Delay (multi) %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11910207,"id":"103","nextBlock":86,"opCode":"setInterpolator_copy70","parameters":["@106"],"spec":"setAnim Type %m.TimeInterpolator ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-16743462,"id":"106","nextBlock":-1,"opCode":"ViewPropertyAnimator_LinearInterpolator","parameters":[],"spec":"Linear Interpolator","subStack1":-1,"subStack2":-1,"type":"v","typeName":"TimeInterpolator"}
+{"color":-11910207,"id":"86","nextBlock":-1,"opCode":"With End animation","parameters":[],"spec":"When Anim End (no required custom variable)","subStack1":87,"subStack2":-1,"type":"c","typeName":""}
+{"color":-16354097,"id":"87","nextBlock":-1,"opCode":"setText","parameters":["textview1","Animation End"],"spec":"%m.textview setText %s","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+
+@MainActivity.java_button4_onClick
+{"color":-11899692,"id":"36","nextBlock":38,"opCode":"setVisible","parameters":["textview1","VISIBLE"],"spec":"%m.view setVisible %m.visible","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11899692,"id":"38","nextBlock":10,"opCode":"setScaleX","parameters":["textview1","2"],"spec":"%m.view setScaleX %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-10011977,"id":"10","nextBlock":-1,"opCode":"Make Animation","parameters":["textview1"],"spec":"%m.view Animate","subStack1":28,"subStack2":-1,"type":"c","typeName":""}
+{"color":-14575885,"id":"28","nextBlock":20,"opCode":"ViewPropertyAnimator_scaleX","parameters":["0.5"],"spec":"scale X to %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-10011977,"id":"20","nextBlock":14,"opCode":"alpha","parameters":["0"],"spec":"Fade (Alpha) 0,1 %d ","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-10011977,"id":"14","nextBlock":15,"opCode":"ViewPropertyAnimator_setStartDelay","parameters":["500"],"spec":"set Start Delay %d (single)","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-10011977,"id":"15","nextBlock":35,"opCode":"ViewPropertyAnimator_setDuration","parameters":["500"],"spec":"set Duration %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-10011977,"id":"35","nextBlock":-1,"opCode":"With End animation","parameters":[],"spec":"When Anim End (no required custom variable)","subStack1":31,"subStack2":-1,"type":"c","typeName":""}
+{"color":-11899692,"id":"31","nextBlock":32,"opCode":"setVisible","parameters":["textview1","VISIBLE"],"spec":"%m.view setVisible %m.visible","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11899692,"id":"32","nextBlock":34,"opCode":"setAlpha","parameters":["textview1","1"],"spec":"%m.view setAlpha %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
+{"color":-11899692,"id":"34","nextBlock":-1,"opCode":"setScaleX","parameters":["textview1","1"],"spec":"%m.view setScaleX %d","subStack1":-1,"subStack2":-1,"type":" ","typeName":""}
 
